@@ -1,0 +1,107 @@
+body{
+font-family: Arial Narrow;
+text-align:center;
+background:#f4f4f4;
+}
+
+h1{
+color:#e26df2;
+}
+
+.board{
+display:grid;
+grid-template-columns: repeat(3,100px);
+gap:5px;
+justify-content:center;
+margin:20px auto;
+}
+
+.cell{
+width:100px;
+height:100px;
+background:white;
+border:2px solid black;
+font-size:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+}
+
+
+.cell:hover{
+background:#eee;
+}
+
+.scoreboard{
+font-size:20px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+}
+
+
+body {
+  background-image: url(tic-tac-toe.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+  margin: 0;
+}
+
+.corner {
+  position: fixed;   /* keeps it in the corner even when scrolling */
+  top: 0;
+  width: 120px;      /* change size if needed */
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+
+/* Optional: simple animation for a “fast/good” effect */
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+/* Ensure body is relative for absolute positioning */
+body {
+    position: relative;
+    margin: 0;
+}
+
+/* Corner images */
+.corner {
+    position: absolute;
+    top: 10px;   /* distance from top */
+    width: 100px; /* adjust size */
+    height: auto;
+}
+
+.corner.left {
+    left: 10px;
+}
+
+.corner.right {
+    right: 10px;
+}
+
+
+/* NEW: The CSS class we will flip on when someone wins */ 
+
+.cell.win { background-color: #ff4d4d; /* Bright Red */ }

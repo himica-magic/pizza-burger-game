@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🍔 TIC TAC TOE 🍕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Corner images -->
+    <img src="burger.jpg" class="corner left" alt="Burger">
+    <img src="pizza.jpg" class="corner right" alt="Pizza">
+
+    <h1>What my tic tac toe is going to be about!</h1>
+    <p>
+        <br>First of all, it is going to be one game at a time<br>It will be saying who won the game!<br> Secondly, you will be a burger and going against a computer which is the pizza icon!
+
+    <h1>🍔 Burger vs 🍕 Pizza Tic Tac Toe</h1>
+
+    
+    <h2 id="status">Burger's Turn 🍔</h2>
+    
+
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <button onclick="resetGame()">Reset Game</button>
+
+    <h2>Rules</h2>
+    <ul>
+        <li>Players take turns placing 🍔 or 🍕.</li>
+        <li>Get 3 in a row to win.</li>
+        <li>If the board fills up with no winner, it's a tie.</li>
+    </ul>
+
+    <h2>Watch How To Play</h2>
+    <!-- Autoplay, muted, looping (e.g. for a background video) -->
+<video width="640" height="360" autoplay muted loop playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
